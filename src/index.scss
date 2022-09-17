@@ -1,0 +1,62 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: #eee;
+  border: none;
+  border-radius: 0.25em;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0.1em;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  user-select: none;
+
+  &:disabled {
+    background: #ccc;
+    color: #ccc;
+  }
+
+  &:hover:not(:disabled) {
+    background: #dedede;
+  }
+}
+
+.container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+table {
+  margin: 0 auto;
+}
+
+a {
+  color: #333 !important;
+}
